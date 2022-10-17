@@ -30,8 +30,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
-          chmod +x tmate
-          ./tmate
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install tmate
+          tmate
           
           
       - name: Upload a Build Artifact
