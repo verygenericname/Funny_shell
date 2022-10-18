@@ -55,7 +55,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
-          sudo apt install tmate -y
+          sudo apt install tmate
           tmate -F
           
           
