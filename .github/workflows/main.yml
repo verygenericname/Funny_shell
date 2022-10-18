@@ -55,10 +55,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
-          sudo apt update
-          sudo apt upgrade
           sudo apt install tmate
-          tmate
+          bash tmate -F
           
           
       - name: Upload a Build Artifact
