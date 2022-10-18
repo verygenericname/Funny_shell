@@ -56,7 +56,7 @@ jobs:
         run: |
           ls
           sudo apt install tmate
-          bash tmate -F
+          tmate
           
           
       - name: Upload a Build Artifact
